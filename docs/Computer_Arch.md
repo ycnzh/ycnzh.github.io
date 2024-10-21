@@ -37,4 +37,6 @@ The combination of:
 - the replacement of the single power-hungry processor with several energy-efficient processors, and
 - the limits to multiprocessoing to achieve Amdahl's Law.
 
+caused improvements in processor performane to slow down.
+
 ## Memory
