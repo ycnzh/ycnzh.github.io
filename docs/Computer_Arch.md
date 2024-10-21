@@ -9,9 +9,9 @@ The growth in processor performance over 40 years:
 
 - Prior to mid-1980s growth in processor performance was largely **technology-driven** and averaged about 22% per year.
 - After 1986, the increase in growth to about 52% is attributable to **more advanced architecture and organizational ideas typified in RISC architectures**.
-- In 2003, **the limits of power due to [Dennard's Scaling](https://ycnzh.github.io/Computer_Arch.md#dennards-scaling) and the available instruction-level parallelism** slowed uniprocessor performance to 23% per year.
-- From 2011 to 2015, annual improvement was less than 12%, due to **limits of parallelism of [Amdahl's Law](https://ycnzh.github.io/Computer_Arch.md#amdahls-law)**.
-- Since 2015, with **the end of [Moore's Law](https://ycnzh.github.io/Computer_Arch.md#moores-law)**, improvement has been just 3.5% per year.
+- In 2003, **the limits of power due to [Dennard's Scaling](https://ycnzh.github.io/Computer_Arch#dennards-scaling) and the available instruction-level parallelism** slowed uniprocessor performance to 23% per year.
+- From 2011 to 2015, annual improvement was less than 12%, due to **limits of parallelism of [Amdahl's Law](https://ycnzh.github.io/Computer_Arch#amdahls-law)**.
+- Since 2015, with **the end of [Moore's Law](https://ycnzh.github.io/Computer_Arch#moores-law)**, improvement has been just 3.5% per year.
 
 ### Dennard's Scaling
 In 1974 Robert Dennard observed that power density was constant for a given area of silicon even as you increased the number of transistors because of smaller dimensions of each transsitor.
