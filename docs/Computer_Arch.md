@@ -30,4 +30,11 @@ Amdahl's Law prescribes practical limits to the number of useful cores per chip.
 ### Moore's Law
 In 1965 Gordon Moore famously predicted that the number of transistors per chip would double every year, which was amended in 1975 to every two years. That prediction lasted for about 50 years, but no longer holds.
 
+<br/><br/>
+The combination of:
+- transistors no longer getting much better beacuse of slowing of Moore's Law and the end of Dennard's scaling,
+- the unchanging power budgets for microprocessors,
+- the replacement of the single power-hungry processor with several energy-efficient processors, and
+- the limits to multiprocessoing to achieve Amdahl's Law.
+
 ## Memory
