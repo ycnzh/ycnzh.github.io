@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Homepage
+title: "Homepage"
 ---
 
 I'm doing reviews for my preliminary exam in Feb lately. Below are two main topics that will be involved in the exam.
