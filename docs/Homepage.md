@@ -13,7 +13,7 @@ Therefore, I will save the notes and records made during my learning process on 
 ### Table of contents:
 
 #### Computer Systems and Software (listed by priority)
-- [Computer Architecture](./comp_arch/Computer_Arch) (more hardware related)
+- [Computer Architecture](./comp_arch/Computer_Arch.md) (more hardware related)
 - Operating System
 - Data Structure
 - Algorithm Analysis and Design
