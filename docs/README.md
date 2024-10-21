@@ -8,7 +8,7 @@ Therefore, I will save the notes and records made during my learning process on 
 ### Table of contents:
 
 #### Computer Systems and Software (listed by priority)
-- [Computer Architecture](https://github.com/ycnzh/ycnzh.github.io/blob/main/docs/Computer_Arch.md) (more hardware related)
+- [Computer Architecture](https://ycnzh.github.io/Computer_Arch) (more hardware related)
 - Operating System
 - Data Structure
 - Algorithm Analysis and Design
