@@ -1,6 +1,6 @@
 ---
-layout: post
-title: "Computer Architecture"
+layout: page
+pagetitle: "Computer Architecture"
 ---
 
 The computer architecture notes are mainly from Hennessy and Patterson's book: [Computer Architecture: A Quantitative Approach - 6th edition](https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-811905-1), and some online sources. Since the purpose of these notes are for my prelim exam, they will not cover everything in the book - only those which I think might be useful will be included.
