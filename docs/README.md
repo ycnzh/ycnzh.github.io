@@ -16,6 +16,6 @@ Therefore, I will save the notes and records made during my learning process on 
 - (to be determined)
 
 #### Digital System Design
-- (Placeholder)
+- ...
 
 
