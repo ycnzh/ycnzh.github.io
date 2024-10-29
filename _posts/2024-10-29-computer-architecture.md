@@ -20,7 +20,7 @@ Source: [Computer Architecture: A Quantitative Approach - 6th edition](https://s
 ## Chapter 1: Overview
 ### §1.1 Processor Performance Trend
 The growth in processor performance over 40 years: 
-![Growth in processor performance over 40 years](./pic/Growth-in-processor-performance-over-40-years.png)
+![Growth in processor performance over 40 years](/_posts/pic/Growth-in-processor-performance-over-40-years.png)
 
 - Prior to mid-1980s growth in processor performance was largely **technology-driven** and averaged about 22% per year.
 - After 1986, the increase in growth to about 52% is attributable to **more advanced architecture and organizational ideas typified in RISC architectures**.
