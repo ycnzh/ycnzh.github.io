@@ -65,3 +65,5 @@ Computer hardware in turn can exploit these two kinds of application parallelism
 1. 
 
 ## Memory
+
+## Instruction Level Parallelism
