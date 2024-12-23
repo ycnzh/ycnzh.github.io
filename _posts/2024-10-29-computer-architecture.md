@@ -14,7 +14,7 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
   - [§1.2 Class of Parallelism and Parallel Architectures](#12-class-of-parallelism-and-parallel-architectures)
 - [Memory](#memory)
 
-# Chapter 1: Overview
+# Overview
 ## §1.1 Processor Performance Trend
 The growth in processor performance over 40 years: 
 ![Growth in processor performance over 40 years](/assets/images/Growth-in-processor-performance-over-40-years.png)
@@ -61,6 +61,14 @@ Computer hardware in turn can exploit these two kinds of application parallelism
 
 1. 
 
-# Memory
+# Memory Hierarchy Design
+
+# Pipelining: Basic and Intermediate Concepts
+## §3.1 Introduction
+What is pipelining?
+
+\- *Pipelining* is an implementation technique whereby multiple instructions are overlapped in execution.
+
+
 
 # Instruction Level Parallelism
