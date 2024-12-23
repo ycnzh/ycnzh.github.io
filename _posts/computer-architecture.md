@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 pagetitle: "Computer Architecture"
 ---
 
@@ -17,7 +17,7 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
 # Overview
 ## §1.1 Processor Performance Trend
 The growth in processor performance over 40 years: 
-![Growth in processor performance over 40 years](/assets/images/Growth-in-processor-performance-over-40-years.png)
+![Growth in processor performance over 40 years](../assets/images/Growth-in-processor-performance-over-40-years.png)
 
 - Prior to mid-1980s growth in processor performance was largely **technology-driven** and averaged about 22% per year.
 - After 1986, the increase in growth to about 52% is attributable to **more advanced architecture and organizational ideas typified in RISC architectures**.
@@ -62,6 +62,8 @@ Computer hardware in turn can exploit these two kinds of application parallelism
 1. 
 
 # Memory Hierarchy Design
+## §2.1
+Locality: 
 
 # Pipelining: Basic and Intermediate Concepts
 ## §3.1 Introduction
