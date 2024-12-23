@@ -8,4 +8,13 @@
 layout: home
 ---
 
-This is the index page?
+#### Computer Systems and Software (listed by priority)
+- [Computer Architecture](./_posts/2024-10-29-computer-architecture.md)
+- Operating System
+- Data Structure
+- Algorithm Analysis and Design
+- Computer Network (not sure if this will be included in the exam)
+- TBD
+
+#### Digital System Design
+- ...
