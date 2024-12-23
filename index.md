@@ -8,7 +8,7 @@
 layout: home
 ---
 
-#### Computer Systems and Software (listed by priority)
+## Computer Systems and Software (listed by priority)
 - [Computer Architecture](./_posts/2024-10-29-computer-architecture.md)
 - Operating System
 - Data Structure
@@ -16,5 +16,5 @@ layout: home
 - Computer Network (not sure if this will be included in the exam)
 - TBD
 
-#### Digital System Design
+## Digital System Design
 - ...
