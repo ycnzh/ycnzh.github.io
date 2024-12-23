@@ -1,7 +1,7 @@
 ---
 layout: page
 pagetitle: "Computer Architecture"
-permalink: /comp_arch/
+permalink: /computer_architecture/
 ---
 
 The computer architecture notes are mainly from Hennessy and Patterson's book: [Computer Architecture: A Quantitative Approach - 6th edition](https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-811905-1), and some online sources. Since the purpose of these notes are for my prelim exam, they will not cover everything in the book - only those which I think might be useful will be included.
@@ -18,7 +18,10 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
 # Overview
 ## §1.1 Processor Performance Trend
 The growth in processor performance over 40 years: 
-![Growth in processor performance over 40 years](../assets/images/Growth-in-processor-performance-over-40-years.png)
+
+<p align="center">
+<img src="../assets/images/comp_arch/Growth-in-processor-performance-over-40-years.png" width=100%>
+</p>
 
 - Prior to mid-1980s growth in processor performance was largely **technology-driven** and averaged about 22% per year.
 - After 1986, the increase in growth to about 52% is attributable to **more advanced architecture and organizational ideas typified in RISC architectures**.
@@ -63,9 +66,26 @@ Computer hardware in turn can exploit these two kinds of application parallelism
 1. 
 
 # Memory Hierarchy Design
-## §2.1
-Locality: 
+The goal is to provide a memory system with a cost per byte that is almost as low as the cheapest level of memory and a speed almost as fast as the fastest level.
+## §2.1 Basics
+**Locality**:
+  - **Spatial locality**: If a particular storage location is referenced at a particular time, then it is likely that nearby memory locations will be referenced in the near future.
+  - **Temporal locality**: If at one point a particular memory location is referenced, then it is likely that the same location will be referenced again in the near future.
 
+The importance of the memory hierarchy has increased with advances in performance of processors. The below figure plots single processor performance projections against the historical performance improvement in time to access main memory. The processor line shows the increase in memory requests per second on average. The memory line shows the incease in memory requests per second on the DRAM.
+
+<p align="center">
+<img src="../assets/images/comp_arch/processor-memory-gap.png" width=60%>
+</p>
+
+**Concerns**:
+ - Memory access time 
+    - = Hit time + (Miss rate) x Miss penalty
+ - Power consumption 
+    - a major consideration more recently
+    - caches consumes significant power both as leakage (static) and active (dynamic) power 
+    - in PMDs (personal mobile devices) the caches can account for 25% ~ 50% total power consumption
+    - trade-off: performance and power consumption
 # Pipelining: Basic and Intermediate Concepts
 ## §3.1 Introduction
 What is pipelining?

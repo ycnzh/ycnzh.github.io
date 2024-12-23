@@ -10,7 +10,7 @@ title: Home
 ---
 
 ## Computer Systems and Software
-- [Computer Architecture](./comp_arch)
+- [Computer Architecture](./computer_architecture)
 - Operating System
 - Data Structure
 - Algorithm Analysis and Design
