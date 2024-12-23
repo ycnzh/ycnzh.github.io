@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 pagetitle: "Computer Architecture"
 ---
 
