@@ -18,7 +18,7 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
     - [§2.1 Basics](#%C2%A721-basics)
     - [§2.2 Memory technology and optimizations](#%C2%A722-memory-technology-and-optimizations)
         - [SRAM technology](#sram-technology)
-        - [DRAM technology](#dram-technology)
+        - [DRAM technology ⭐️](#dram-technology-%EF%B8%8F)
 - [Pipelining: Basic and Intermediate Concepts](#pipelining-basic-and-intermediate-concepts)
     - [§3.1 Introduction](#%C2%A731-introduction)
 - [Instruction Level Parallelism](#instruction-level-parallelism)
@@ -136,11 +136,11 @@ Memory latency is quoted using two measures:
 - 6 transistors per bit
 - needs only minimum power to retain the charge in standby mode.
 
-### DRAM technology
+### DRAM technology ⭐️
 - Data needs to be written back after being read (refresh)
 - single transistor per bit
 - need to pre-charge row buffer
-- need to refresh periodically
+- need to refresh periodically (DRAM controller takes charge of this)
 
 Morden DRAMs are organized in banks. Each banks consists of rows. Sending an ***ACT*** (Active) command opens a banck and a row, and loeads the row into a row buffer. When the row is in the buffer, it can be transferred by successive column address at whatever the width of the DRAM is (typically 4, 8 or 16 bits in DDR4) or by specifying a block transfer and the starting address. 
 
@@ -149,6 +149,9 @@ The ***PRE*** (Precharge) command closes the bank and row and readies it for a n
 ***RAS***: Row access strobe <span style="color: gray;">(To be added more contents later)</span>
 
 ***CAS***: Column access strobe <span style="color: gray;">(To be added more contents later)</span>
+
+### SDRAM techonology - improving memory performance inside a DRAM chip
+
 
 
 
