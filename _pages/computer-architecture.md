@@ -119,8 +119,17 @@ Memory latency is quoted using two measures:
 - Cycle time: the minimum time between unrelated requests to memory.
 
 ### SRAM technology
+Static RAM. 
+- No need to refresh
+  - access time close to cycle time
+- 6 transistors per bit
+- needs only minimum power to retain the charge in standby mode.
 
-
+### DRAM technology
+Dynamic RAM.
+- Data needs to be written back after being read (refresh)
+- single transistor per bit
+- 
 
 
 
