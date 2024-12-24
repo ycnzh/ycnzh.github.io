@@ -23,6 +23,8 @@ The growth in processor performance over 40 years:
 <img src="../assets/images/comp_arch/Growth-in-processor-performance-over-40-years.png" width=100%>
 </p>
 
+![1](../assets/images/comp_arch/Growth-in-processor-performance-over-40-years.png)
+
 - Prior to mid-1980s growth in processor performance was largely **technology-driven** and averaged about 22% per year.
 - After 1986, the increase in growth to about 52% is attributable to **more advanced architecture and organizational ideas typified in RISC architectures**.
 - In 2003, **the limits of power due to [Dennard's Scaling](#dennards-scaling) and the available instruction-level parallelism** slowed uniprocessor performance to 23% per year.
