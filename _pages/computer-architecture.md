@@ -65,58 +65,60 @@ Computer hardware in turn can exploit these two kinds of application parallelism
 
 1. 
 
+---
+
 # Memory Hierarchy Design
 The goal is to provide a memory system with a cost per byte that is almost as low as the cheapest level of memory and a speed almost as fast as the fastest level.
 
-  ## §2.1 Basics
-  **Locality**:
-    - **Spatial locality**: If a particular storage location is referenced at a particular time, then it is likely that nearby memory locations will be referenced in the near future.
-    - **Temporal locality**: If at one point a particular memory location is referenced, then it is likely that the same location will be referenced again in the near future.
+## §2.1 Basics
+**Locality**:
+  - **Spatial locality**: If a particular storage location is referenced at a particular time, then it is likely that nearby memory locations will be referenced in the near future.
+  - **Temporal locality**: If at one point a particular memory location is referenced, then it is likely that the same location will be referenced again in the near future.
 
-  The importance of the memory hierarchy has increased with advances in performance of processors. The below figure plots single processor performance projections against the historical performance improvement in time to access main memory. The processor line shows the increase in memory requests per second on average. The memory line shows the incease in memory requests per second on the DRAM.
+The importance of the memory hierarchy has increased with advances in performance of processors. The below figure plots single processor performance projections against the historical performance improvement in time to access main memory. The processor line shows the increase in memory requests per second on average. The memory line shows the incease in memory requests per second on the DRAM.
 
-  <p align="center">
-  <img src="../assets/images/comp_arch/processor-memory-gap.png" width="60%"/>
-  </p>
+<p align="center">
+<img src="../assets/images/comp_arch/processor-memory-gap.png" width="60%"/>
+</p>
 
-  **Concerns**:
-  - Memory access time 
-      - = Hit time + (Miss rate) x Miss penalty
-  - Power consumption 
-      - a major consideration more recently
-      - caches consumes significant power both as leakage (static) and active (dynamic) power 
-      - in PMDs (personal mobile devices) the caches can account for 25% ~ 50% total power consumption
-      - trade-off: performance and power consumption
+**Concerns**:
+- Memory access time 
+    - = Hit time + (Miss rate) x Miss penalty
+- Power consumption 
+    - a major consideration more recently
+    - caches consumes significant power both as leakage (static) and active (dynamic) power 
+    - in PMDs (personal mobile devices) the caches can account for 25% ~ 50% total power consumption
+    - trade-off: performance and power consumption
 
-  **Cache placement scheme**: <span style="color: gray;">(To be added more contents later)</span>
-  - n-way set associative: n blocks in a set
-  - Direct mapp: just one block per set
-  - Fully associative: just one set
+**Cache placement scheme**: <span style="color: gray;">(To be added more contents later)</span>
+- n-way set associative: n blocks in a set
+- Direct mapp: just one block per set
+- Fully associative: just one set
 
-  **Three categories of cache miss**:
-  1. **Compulsory** - the very first access to a block cannot be in the cache.
-  2. **Capacity** - if the cache cannot contain all the blocks needed during execution of a program, capacity misses (in addition to compulsory misses) will occur because of blocks being discarded and later retrieved.
-  3. **Conflict** - if the block placement strategy is not fully associative, conflict misses (in addition to compulsory and capacity misses) will occur because a block may be discarded and later retrieved if multiple blocks map to its set and accesses to the different blocks are intermingled.
+**Three categories of cache miss**:
+1. **Compulsory** - the very first access to a block cannot be in the cache.
+2. **Capacity** - if the cache cannot contain all the blocks needed during execution of a program, capacity misses (in addition to compulsory misses) will occur because of blocks being discarded and later retrieved.
+3. **Conflict** - if the block placement strategy is not fully associative, conflict misses (in addition to compulsory and capacity misses) will occur because a block may be discarded and later retrieved if multiple blocks map to its set and accesses to the different blocks are intermingled.
 
-  **To reduce memory access time**:
-  - Larger block size to reduce miss rate
-    - reduce compulsory misses, slightly reduces static power (lower the numebr of tags)
-    - increase miss penalty, increase capacity or conflict misses, especially in smaller caches
-  - Bigger caches to reduce miss rate
-    - longer hit time
-    - higher cost and power (both static and dynamic)
-  - Higher associativity to reduce miss rate
-    - increase hit time
-    - increase power consumption
-  - Multilevel caches to reduce miss penalty
-    - more power-efficient than single aggregate cache
+**To reduce memory access time**:
+- Larger block size to reduce miss rate
+  - reduce compulsory misses, slightly reduces static power (lower the numebr of tags)
+  - increase miss penalty, increase capacity or conflict misses, especially in smaller caches
+- Bigger caches to reduce miss rate
+  - longer hit time
+  - higher cost and power (both static and dynamic)
+- Higher associativity to reduce miss rate
+  - increase hit time
+  - increase power consumption
+- Multilevel caches to reduce miss penalty
+  - more power-efficient than single aggregate cache
 
-  ## §2.2 Memory technology and optimizations
-  Memory latency is quoted using two measures:
-  - Access time: the time between when a read is requested and when the desired word arrives.
-  - Cycle time: the minimum time between unrelated requests to memory.
+## §2.2 Memory technology and optimizations
+Memory latency is quoted using two measures:
+- Access time: the time between when a read is requested and when the desired word arrives.
+- Cycle time: the minimum time between unrelated requests to memory.
 
-  ### SRAM technology
+### SRAM technology
 
 
 
