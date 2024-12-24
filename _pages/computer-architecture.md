@@ -20,7 +20,7 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
 The growth in processor performance over 40 years: 
 
 <p align="center">
-<img src="../assets/images/comp_arch/Growth-in-processor-performance-over-40-years.png" width="100%">
+<img src="../assets/images/comp_arch/Growth-in-processor-performance-over-40-years.png" width="95%"/>
 </p>
 
 - Prior to mid-1980s growth in processor performance was largely **technology-driven** and averaged about 22% per year.
@@ -75,7 +75,7 @@ The goal is to provide a memory system with a cost per byte that is almost as lo
   The importance of the memory hierarchy has increased with advances in performance of processors. The below figure plots single processor performance projections against the historical performance improvement in time to access main memory. The processor line shows the increase in memory requests per second on average. The memory line shows the incease in memory requests per second on the DRAM.
 
   <p align="center">
-  <img src="../assets/images/comp_arch/processor-memory-gap.png" width=60%>
+  <img src="../assets/images/comp_arch/processor-memory-gap.png" width="60%"/>
   </p>
 
   **Concerns**:
@@ -91,6 +91,35 @@ The goal is to provide a memory system with a cost per byte that is almost as lo
   - n-way set associative: n blocks in a set
   - Direct mapp: just one block per set
   - Fully associative: just one set
+
+  **Three categories of cache miss**:
+  1. **Compulsory** - the very first access to a block cannot be in the cache.
+  2. **Capacity** - if the cache cannot contain all the blocks needed during execution of a program, capacity misses (in addition to compulsory misses) will occur because of blocks being discarded and later retrieved.
+  3. **Conflict** - if the block placement strategy is not fully associative, conflict misses (in addition to compulsory and capacity misses) will occur because a block may be discarded and later retrieved if multiple blocks map to its set and accesses to the different blocks are intermingled.
+
+  **To reduce memory access time**:
+  - Larger block size to reduce miss rate
+    - reduce compulsory misses, slightly reduces static power (lower the numebr of tags)
+    - increase miss penalty, increase capacity or conflict misses, especially in smaller caches
+  - Bigger caches to reduce miss rate
+    - longer hit time
+    - higher cost and power (both static and dynamic)
+  - Higher associativity to reduce miss rate
+    - increase hit time
+    - increase power consumption
+  - Multilevel caches to reduce miss penalty
+    - more power-efficient than single aggregate cache
+
+  ## §2.2 Memory technology and optimizations
+  Memory latency is quoted using two measures:
+  - Access time: the time between when a read is requested and when the desired word arrives.
+  - Cycle time: the minimum time between unrelated requests to memory.
+
+  ### SRAM technology
+  
+
+
+
 
 # Pipelining: Basic and Intermediate Concepts
 ## §3.1 Introduction
