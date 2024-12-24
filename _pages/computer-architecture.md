@@ -67,6 +67,7 @@ Computer hardware in turn can exploit these two kinds of application parallelism
 
 # Memory Hierarchy Design
 The goal is to provide a memory system with a cost per byte that is almost as low as the cheapest level of memory and a speed almost as fast as the fastest level.
+
   ## §2.1 Basics
   **Locality**:
     - **Spatial locality**: If a particular storage location is referenced at a particular time, then it is likely that nearby memory locations will be referenced in the near future.
@@ -116,7 +117,7 @@ The goal is to provide a memory system with a cost per byte that is almost as lo
   - Cycle time: the minimum time between unrelated requests to memory.
 
   ### SRAM technology
-  
+
 
 
 
