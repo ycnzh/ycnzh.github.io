@@ -67,25 +67,31 @@ Computer hardware in turn can exploit these two kinds of application parallelism
 
 # Memory Hierarchy Design
 The goal is to provide a memory system with a cost per byte that is almost as low as the cheapest level of memory and a speed almost as fast as the fastest level.
-## §2.1 Basics
-**Locality**:
-  - **Spatial locality**: If a particular storage location is referenced at a particular time, then it is likely that nearby memory locations will be referenced in the near future.
-  - **Temporal locality**: If at one point a particular memory location is referenced, then it is likely that the same location will be referenced again in the near future.
+  ## §2.1 Basics
+  **Locality**:
+    - **Spatial locality**: If a particular storage location is referenced at a particular time, then it is likely that nearby memory locations will be referenced in the near future.
+    - **Temporal locality**: If at one point a particular memory location is referenced, then it is likely that the same location will be referenced again in the near future.
 
-The importance of the memory hierarchy has increased with advances in performance of processors. The below figure plots single processor performance projections against the historical performance improvement in time to access main memory. The processor line shows the increase in memory requests per second on average. The memory line shows the incease in memory requests per second on the DRAM.
+  The importance of the memory hierarchy has increased with advances in performance of processors. The below figure plots single processor performance projections against the historical performance improvement in time to access main memory. The processor line shows the increase in memory requests per second on average. The memory line shows the incease in memory requests per second on the DRAM.
 
-<p align="center">
-<img src="../assets/images/comp_arch/processor-memory-gap.png" width=60%>
-</p>
+  <p align="center">
+  <img src="../assets/images/comp_arch/processor-memory-gap.png" width=60%>
+  </p>
 
-**Concerns**:
- - Memory access time 
-    - = Hit time + (Miss rate) x Miss penalty
- - Power consumption 
-    - a major consideration more recently
-    - caches consumes significant power both as leakage (static) and active (dynamic) power 
-    - in PMDs (personal mobile devices) the caches can account for 25% ~ 50% total power consumption
-    - trade-off: performance and power consumption
+  **Concerns**:
+  - Memory access time 
+      - = Hit time + (Miss rate) x Miss penalty
+  - Power consumption 
+      - a major consideration more recently
+      - caches consumes significant power both as leakage (static) and active (dynamic) power 
+      - in PMDs (personal mobile devices) the caches can account for 25% ~ 50% total power consumption
+      - trade-off: performance and power consumption
+
+  **Cache placement scheme**: (To be added more contents later)
+  - n-way set associative: n blocks in a set
+  - Direct mapp: just one block per set
+  - Fully associative: just one set
+
 # Pipelining: Basic and Intermediate Concepts
 ## §3.1 Introduction
 What is pipelining?
