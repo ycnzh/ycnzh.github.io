@@ -6,14 +6,26 @@ permalink: /computer_architecture/
 
 The computer architecture notes are mainly from Hennessy and Patterson's book: [Computer Architecture: A Quantitative Approach - 6th edition](https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-811905-1), and some online sources. Since the purpose of these notes are for my prelim exam, they will not cover everything in the book - only those which I think might be useful will be included.
 
-## Table of Contents:
-- [Chapter 1: Overview](#chapter-1-overview)
-  - [§1.1 Processor Performance Trend](#11-processor-performance-trend)
-    - [Dennard's Scaling](#dennards-scaling)
-    - [Amdahl's Law](#amdahls-law)
-    - [Moore's Law](#moores-law)
-  - [§1.2 Class of Parallelism and Parallel Architectures](#12-class-of-parallelism-and-parallel-architectures)
-- [Memory](#memory)
+<!-- TOC -->
+
+- [Overview](#overview)
+    - [§1.1 Processor Performance Trend](#%C2%A711-processor-performance-trend)
+        - [Dennard's Scaling](#dennards-scaling)
+        - [Amdahl's Law](#amdahls-law)
+        - [Moore's Law](#moores-law)
+    - [§1.2 Class of Parallelism and Parallel Architectures](#%C2%A712-class-of-parallelism-and-parallel-architectures)
+- [Memory Hierarchy Design](#memory-hierarchy-design)
+    - [§2.1 Basics](#%C2%A721-basics)
+    - [§2.2 Memory technology and optimizations](#%C2%A722-memory-technology-and-optimizations)
+        - [SRAM technology](#sram-technology)
+        - [DRAM technology](#dram-technology)
+- [Pipelining: Basic and Intermediate Concepts](#pipelining-basic-and-intermediate-concepts)
+    - [§3.1 Introduction](#%C2%A731-introduction)
+- [Instruction Level Parallelism](#instruction-level-parallelism)
+
+<!-- /TOC -->
+
+---
 
 # Overview
 ## §1.1 Processor Performance Trend
@@ -119,18 +131,24 @@ Memory latency is quoted using two measures:
 - Cycle time: the minimum time between unrelated requests to memory.
 
 ### SRAM technology
-Static RAM. 
 - No need to refresh
   - access time close to cycle time
 - 6 transistors per bit
 - needs only minimum power to retain the charge in standby mode.
 
 ### DRAM technology
-Dynamic RAM.
 - Data needs to be written back after being read (refresh)
 - single transistor per bit
 - need to pre-charge row buffer
 - need to refresh periodically
+
+Morden DRAMs are organized in banks. Each banks consists of rows. Sending an ***ACT*** (Active) command opens a banck and a row, and loeads the row into a row buffer. When the row is in the buffer, it can be transferred by successive column address at whatever the width of the DRAM is (typically 4, 8 or 16 bits in DDR4) or by specifying a block transfer and the starting address. 
+
+The ***PRE*** (Precharge) command closes the bank and row and readies it for a new access. Each command, as well as block transfers, are synchronized with a clock.
+
+***RAS***: Row access strobe <span style="color: gray;">(To be added more contents later)</span>
+
+***CAS***: Column access strobe <span style="color: gray;">(To be added more contents later)</span>
 
 
 
