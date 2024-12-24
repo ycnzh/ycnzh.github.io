@@ -129,7 +129,8 @@ Static RAM.
 Dynamic RAM.
 - Data needs to be written back after being read (refresh)
 - single transistor per bit
-- 
+- need to pre-charge row buffer
+- need to refresh periodically
 
 
 
