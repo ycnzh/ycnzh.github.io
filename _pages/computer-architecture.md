@@ -87,7 +87,7 @@ The goal is to provide a memory system with a cost per byte that is almost as lo
       - in PMDs (personal mobile devices) the caches can account for 25% ~ 50% total power consumption
       - trade-off: performance and power consumption
 
-  **Cache placement scheme**: (To be added more contents later)
+  **Cache placement scheme**: <span style="color: gray;">(To be added more contents later)</span>
   - n-way set associative: n blocks in a set
   - Direct mapp: just one block per set
   - Fully associative: just one set
