@@ -19,8 +19,9 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
     - [§2.2 Memory technology and optimizations](#%C2%A722-memory-technology-and-optimizations)
         - [SRAM technology](#sram-technology)
         - [DRAM technology ⭐️](#dram-technology-%EF%B8%8F)
-            - [SDRAM techonology](#sdram-techonology)
-        - [](#)
+            - [SDRAM](#sdram)
+            - [HBM](#hbm)
+    - [Flash memory](#flash-memory)
 - [Pipelining: Basic and Intermediate Concepts](#pipelining-basic-and-intermediate-concepts)
     - [§3.1 Introduction](#%C2%A731-introduction)
 - [Instruction Level Parallelism](#instruction-level-parallelism)
@@ -152,7 +153,7 @@ The ***PRE*** (Precharge) command closes the bank and row and readies it for a n
 
 ***CAS***: Column access strobe <span style="color: gray;">(To be added more contents later)</span>
 
-#### SDRAM techonology 
+#### SDRAM
 - No ovrehead to synchronize with controller.
 - Support *burst mode*, where multiple transfers can occur without specifying a new column address. 
 
@@ -172,9 +173,13 @@ The power consumption of the DRAM depends on the operating voltage.
 
 **Memory management unit (MMU)**: <span style="color: gray;">(To be added more contents later)</span>
 
+#### HBM
+- A packaging innovation.
+- Places multiple DRAMs in a stacked or adjacent fashion embedded within the same package as the processor (also called embedded DRAM).
+- Lowers the access latency
+- Potentially increases the bandwidth by allowing more and faster connections between the processor and DRAM (thus called *high bandwidth memory*).
 
-
-### 
+## Flash memory
 
 
 # Pipelining: Basic and Intermediate Concepts
