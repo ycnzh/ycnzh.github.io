@@ -18,10 +18,10 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
     - [§2.1 Basics](#%C2%A721-basics)
     - [§2.2 Memory technology and optimizations](#%C2%A722-memory-technology-and-optimizations)
         - [SRAM technology](#sram-technology)
-        - [DRAM technology ⚠️](#dram-technology-)
+        - [DRAM technology](#dram-technology)
             - [SDRAM](#sdram)
             - [HBM](#hbm)
-    - [Flash memory](#flash-memory)
+        - [Flash memory](#flash-memory)
 - [Pipelining: Basic and Intermediate Concepts](#pipelining-basic-and-intermediate-concepts)
     - [§3.1 Introduction](#%C2%A731-introduction)
 - [Instruction Level Parallelism](#instruction-level-parallelism)
@@ -139,7 +139,7 @@ Memory latency is quoted using two measures:
 - 6 transistors per bit
 - needs only minimum power to retain the charge in standby mode (static power).
 
-### DRAM technology ⚠️
+### DRAM technology
 - Data needs to be written back after being read (refresh)
 - single transistor per bit
 - need to pre-charge row buffer
@@ -179,7 +179,7 @@ The power consumption of the DRAM depends on the operating voltage.
 - Lowers the access latency
 - Potentially increases the bandwidth by allowing more and faster connections between the processor and DRAM (thus called *high bandwidth memory*).
 
-## Flash memory
+### Flash memory
 - A type of EEPROM (electronically erasable programmable ROM). Normally read-only but can be erased.
 - Holds contents without power.
 - NAND Flash has higher density than NOR Flash and is more suitable for large-scale nonvolatile memories. 
