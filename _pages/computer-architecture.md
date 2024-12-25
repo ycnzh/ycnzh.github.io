@@ -16,12 +16,13 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
     - [§1.2 Class of Parallelism and Parallel Architectures](#%C2%A712-class-of-parallelism-and-parallel-architectures)
 - [Memory Hierarchy Design](#memory-hierarchy-design)
     - [§2.1 Basics](#%C2%A721-basics)
-    - [§2.2 Memory technology and optimizations](#%C2%A722-memory-technology-and-optimizations)
+    - [§2.2 Memory Technology](#%C2%A722-memory-technology)
         - [SRAM technology](#sram-technology)
         - [DRAM technology](#dram-technology)
             - [SDRAM](#sdram)
             - [HBM](#hbm)
         - [Flash memory](#flash-memory)
+    - [§2.3 Virtual Memory](#%C2%A723-virtual-memory)
 - [Pipelining: Basic and Intermediate Concepts](#pipelining-basic-and-intermediate-concepts)
     - [§3.1 Introduction](#%C2%A731-introduction)
 - [Instruction Level Parallelism](#instruction-level-parallelism)
@@ -128,7 +129,7 @@ The importance of the memory hierarchy has increased with advances in performanc
 - Multilevel caches to reduce miss penalty
   - more power-efficient than single aggregate cache
 
-## §2.2 Memory technology and optimizations
+## §2.2 Memory Technology
 Memory latency is quoted using two measures:
 - Access time: the time between when a read is requested and when the desired word arrives.
 - Cycle time: the minimum time between unrelated requests to memory.
@@ -192,6 +193,11 @@ Compared to DRAM:
 - Nonvolatile.
 - Flash memory limits the number of times that any given block can be written, typically at least 100000
 - High density NAND Flash is cheaper than SDRAM.
+
+## §2.3 Virtual Memory
+Virtual memory allows the physical memory (DRAM) to be treated as a cache of secondary storage (disk or solid state).
+
+TLB: act as caches on the page table, eliminating the need to do a memory access every time an address is translated.
 
 
 # Pipelining: Basic and Intermediate Concepts
