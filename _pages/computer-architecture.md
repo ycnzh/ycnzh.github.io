@@ -184,7 +184,9 @@ The power consumption of the DRAM depends on the operating voltage.
 - Holds contents without power.
 - NAND Flash has higher density than NOR Flash and is more suitable for large-scale nonvolatile memories. 
 
+
 Compared to DRAM:
+
 - Reads to Flash are sequential and read an entire page. Has a much longer delay to access the first byte from a random address than SDRAM (150 times slower than DDR).
 - Flash memory must be erased before it is overwritten, and it is erased in blocks rather than individual byte or words. For writing data, Flash is about 1500 times slower than DRAM.
 - Nonvolatile.
