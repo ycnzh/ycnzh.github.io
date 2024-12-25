@@ -18,7 +18,7 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
     - [§2.1 Basics](#%C2%A721-basics)
     - [§2.2 Memory technology and optimizations](#%C2%A722-memory-technology-and-optimizations)
         - [SRAM technology](#sram-technology)
-        - [DRAM technology ⭐️](#dram-technology-%EF%B8%8F)
+        - [DRAM technology ⚠️](#dram-technology-)
             - [SDRAM](#sdram)
             - [HBM](#hbm)
     - [Flash memory](#flash-memory)
@@ -139,7 +139,7 @@ Memory latency is quoted using two measures:
 - 6 transistors per bit
 - needs only minimum power to retain the charge in standby mode (static power).
 
-### DRAM technology ⭐️
+### DRAM technology ⚠️
 - Data needs to be written back after being read (refresh)
 - single transistor per bit
 - need to pre-charge row buffer
@@ -180,6 +180,16 @@ The power consumption of the DRAM depends on the operating voltage.
 - Potentially increases the bandwidth by allowing more and faster connections between the processor and DRAM (thus called *high bandwidth memory*).
 
 ## Flash memory
+- A type of EEPROM (electronically erasable programmable ROM). Normally read-only but can be erased.
+- Holds contents without power.
+- NAND Flash has higher density than NOR Flash and is more suitable for large-scale nonvolatile memories. 
+
+Compared to DRAM:
+- Reads to Flash are sequential and read an entire page. Has a much longer delay to access the first byte from a random address than SDRAM (150 times slower than DDR).
+- Flash memory must be erased before it is overwritten, and it is erased in blocks rather than individual byte or words. For writing data, Flash is about 1500 times slower than DRAM.
+- Nonvolatile.
+- Flash memory limits the number of times that any given block can be written, typically at least 100000
+- High density NAND Flash is cheaper than SDRAM.
 
 
 # Pipelining: Basic and Intermediate Concepts
