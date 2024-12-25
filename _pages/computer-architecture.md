@@ -19,6 +19,8 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
     - [§2.2 Memory technology and optimizations](#%C2%A722-memory-technology-and-optimizations)
         - [SRAM technology](#sram-technology)
         - [DRAM technology ⭐️](#dram-technology-%EF%B8%8F)
+            - [SDRAM techonology](#sdram-techonology)
+        - [](#)
 - [Pipelining: Basic and Intermediate Concepts](#pipelining-basic-and-intermediate-concepts)
     - [§3.1 Introduction](#%C2%A731-introduction)
 - [Instruction Level Parallelism](#instruction-level-parallelism)
@@ -134,7 +136,7 @@ Memory latency is quoted using two measures:
 - No need to refresh
   - access time close to cycle time
 - 6 transistors per bit
-- needs only minimum power to retain the charge in standby mode.
+- needs only minimum power to retain the charge in standby mode (static power).
 
 ### DRAM technology ⭐️
 - Data needs to be written back after being read (refresh)
@@ -150,9 +152,29 @@ The ***PRE*** (Precharge) command closes the bank and row and readies it for a n
 
 ***CAS***: Column access strobe <span style="color: gray;">(To be added more contents later)</span>
 
-### SDRAM techonology - improving memory performance inside a DRAM chip
+#### SDRAM techonology 
+- No ovrehead to synchronize with controller.
+- Support *burst mode*, where multiple transfers can occur without specifying a new column address. 
+
+Improves memory performance inside a DRAM chip
+
+With an asynchornous DRAM, every column access and transfer involved overhead to synchronize with the controller. Adding a clock signal to the DRAM interface so that the repeated transfers would not bear the overhead, thereby creating the *synchronized* DRAM.  
+
+Typically, eight or more 16-bit transfers can occur without sending any new address by placing the DRAM in *burst mode*. The inclusion of such burst mode transfers has meant that there is a significant gap between the bandwidth for a stream of random acceses versus access to a block of data.
+
+Access to different banks can overlap each other, which can hide the precharge time. Dividing DRAMs into banks also reduces the power consumption since only the row in a single bank is read.
+
+The power consumption of the DRAM depends on the operating voltage.
+
+**DDR**: Double data rate, allows a DRAM to transfer on both rising and falling edge of the clock.
+
+**DIMM**: Dual inline memory modules. DRAMs are commonly on small board called DIMMs that contain 4~16 DRAM chips and that are normally organized to be 8 byte wide (+ECC) for desktop and server. 
+
+**Memory management unit (MMU)**: <span style="color: gray;">(To be added more contents later)</span>
 
 
+
+### 
 
 
 # Pipelining: Basic and Intermediate Concepts
