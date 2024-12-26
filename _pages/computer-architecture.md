@@ -25,6 +25,7 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
     - [§2.3 Virtual Memory](#%C2%A723-virtual-memory)
 - [Instruction Level Parallelism](#instruction-level-parallelism)
     - [§3.1 Instruction Set Principles](#%C2%A731-instruction-set-principles)
+        - [Classifying instruction set architectures](#classifying-instruction-set-architectures)
     - [§3.2 Pipelining: Basic and Intermediate Concepts](#%C2%A732-pipelining-basic-and-intermediate-concepts)
 
 <!-- /TOC -->
@@ -202,6 +203,16 @@ TLB: act as caches on the page table, eliminating the need to do a memory access
 
 # Instruction Level Parallelism
 ## §3.1 Instruction Set Principles
+### Classifying instruction set architectures
+The type of internal storage in a processor is the most basic differentiation. Choices are a stack, a accumulator, or a set of registers.
+
+- Stack architecture: operands are impilicitly on the top of the stack.
+- Accumulator architecture: operands are impilicitly the accumulator.
+- General purpose register architecture: have only explicit operands - either register or memory locations.
+  - There are three types in register architecture:
+  - register-memory architecture,
+  - register-register architecture (also called *load-store* architecture),
+  - memory-memory atchitecture (uncommon).
 
 ## §3.2 Pipelining: Basic and Intermediate Concepts
 What is pipelining?
