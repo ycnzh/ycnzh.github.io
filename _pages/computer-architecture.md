@@ -23,9 +23,9 @@ The computer architecture notes are mainly from Hennessy and Patterson's book: [
             - [HBM](#hbm)
         - [Flash memory](#flash-memory)
     - [§2.3 Virtual Memory](#%C2%A723-virtual-memory)
-- [Pipelining: Basic and Intermediate Concepts](#pipelining-basic-and-intermediate-concepts)
-    - [§3.1 Introduction](#%C2%A731-introduction)
 - [Instruction Level Parallelism](#instruction-level-parallelism)
+    - [§3.1 Instruction Set Principles](#%C2%A731-instruction-set-principles)
+    - [§3.2 Pipelining: Basic and Intermediate Concepts](#%C2%A732-pipelining-basic-and-intermediate-concepts)
 
 <!-- /TOC -->
 
@@ -200,12 +200,12 @@ Virtual memory allows the physical memory (DRAM) to be treated as a cache of sec
 TLB: act as caches on the page table, eliminating the need to do a memory access every time an address is translated.
 
 
-# Pipelining: Basic and Intermediate Concepts
-## §3.1 Introduction
+# Instruction Level Parallelism
+## §3.1 Instruction Set Principles
+
+## §3.2 Pipelining: Basic and Intermediate Concepts
 What is pipelining?
 
 \- *Pipelining* is an implementation technique whereby multiple instructions are overlapped in execution.
 
 
-
-# Instruction Level Parallelism
